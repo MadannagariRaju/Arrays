@@ -8,7 +8,7 @@ class Solution {
         //         }
         //     }
         // }
-        // int res[]=new int[al.size()];
+        // int res[]=new int[al.size()]; 
         // for(int i=0;i<res.length;i++) {
         //     res[i] = al.
         // }
