@@ -15,15 +15,23 @@ class Solution {
         // }
         // return false;
 
-        HashMap<Integer,Integer>map = new HashMap<>();
-        for(int i=0;i<nums.length;i++) {
-            map.put(nums[i],map.getOrDefault(nums[i],0)+1);
-        }
-        for(Map.Entry<Integer,Integer>e : map.entrySet()) {
-            if(e.getValue()>1) {
-                return true;
-            }
+        // HashMap<Integer,Integer>map = new HashMap<>();
+        // for(int i=0;i<nums.length;i++) {
+        //     map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+        // }
+        // for(Map.Entry<Integer,Integer>e : map.entrySet()) {
+        //     if(e.getValue()>1) {
+        //         return true;
+        //     }
+        // }
+        // return false;
+
+        Set<Integer>st = new HashSet<>();
+        for(int i:nums) {
+            if(st.contains(i)) return true;
+            st.add(i);
         }
         return false;
+        
     }
 }
